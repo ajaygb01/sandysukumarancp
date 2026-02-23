@@ -44,10 +44,11 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="sm:hidden">
+          <div className="sm:hidden flex-shrink-0">
             <Link
               href="mailto:sandysukumaran@gmail.com"
-              className="p-3 bg-neutral-900 text-white rounded-full shadow-lg"
+              className="w-12 h-12 flex items-center justify-center bg-neutral-900 text-white rounded-full shadow-lg transition-transform active:scale-90"
+              aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </Link>
