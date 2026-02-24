@@ -165,80 +165,6 @@ export default function Home() {
             </div>
           </section>
 
-          {/* ── Career Impact ────────────────────────────────────────────── */}
-          <section className="animate-reveal [animation-delay:0.5s]">
-            <div className="flex flex-col lg:flex-row gap-24">
-              <div className="lg:w-1/3 space-y-8">
-                <h2 className="font-serif text-5xl md:text-6xl font-black text-neutral-900">Carrier <br />Impact.</h2>
-                <div className="h-1 w-24 bg-orange-500 rounded-full" />
-                <p className="text-lg text-neutral-500 leading-relaxed font-medium">
-                  3+ years navigating fast-paced agency environments, managing multi-client deliverables with zero compromise on quality.
-                </p>
-              </div>
-              <div className="lg:w-2/3">
-                <div className="group relative glass p-8 md:p-16 rounded-[3rem] premium-shadow border border-neutral-200/50 hover:border-orange-200 transition-all duration-500">
-                  <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
-                    <div className="space-y-2">
-                      <span className="text-xs font-black uppercase tracking-[0.3em] text-orange-500">Agency Experience</span>
-                      <h3 className="text-4xl font-serif font-black text-neutral-900">Manyfox Media</h3>
-                      <p className="text-neutral-400 font-bold tracking-widest text-xs">TORONTO, CANADA • 2022 — 2025</p>
-                    </div>
-                    <div className="bg-neutral-900 text-white px-6 py-3 rounded-xl text-xs font-black tracking-widest uppercase shadow-xl">
-                      Creative Copywriter
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-12">
-                    {[
-                      { val: "25+", label: "Client Projects", desc: "End-to-end multi-channel campaign execution." },
-                      { val: "150+", label: "Paid Ad Copies", desc: "Strategic copy for Meta, Google, & LinkedIn Ads." },
-                      { val: "40+", label: "Web Assets", desc: "Landing pages, homepages, & product pages." },
-                      { val: "30+", label: "Email Series", desc: "Conversion sequences and newsletters." },
-                    ].map((stat, i) => (
-                      <div key={i} className="group/item space-y-4">
-                        <div className="flex items-baseline gap-2">
-                          <p className="text-5xl font-serif font-black text-neutral-900 group-hover/item:text-orange-500 transition-colors">{stat.val}</p>
-                          <div className="w-2 h-2 rounded-full bg-orange-500 opacity-0 group-hover/item:opacity-100 transition-opacity" />
-                        </div>
-                        <p className="text-xs font-black uppercase tracking-[0.2em] text-neutral-800">{stat.label}</p>
-                        <p className="text-sm text-neutral-500 leading-relaxed font-medium">{stat.desc}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* ── Toolkit ──────────────────────────────────────────────────── */}
-          <section className="space-y-24">
-            <div className="text-center space-y-4">
-              <h2 className="font-serif text-5xl md:text-7xl font-black text-neutral-900">The Toolkit.</h2>
-              <p className="text-neutral-500 font-bold tracking-[0.3em] uppercase text-[10px]">Methodology Meets Technology</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                { title: "Core Skills", icon: Sparkles, items: ["Marketing Copywriting", "SEO Copywriting", "Brand Voice", "Content Strategy", "Landing Page Optimization"] },
-                { title: "Platforms", icon: MoveRight, items: ["Meta Ads Manager", "Google Ads", "LinkedIn Ads", "Google Analytics", "Search Console"] },
-                { title: "Internal Tools", icon: Star, items: ["Figma", "Canva", "Notion", "Asana", "Slack", "Google Workspace"] },
-              ].map((box, i) => (
-                <div key={i} className="glass p-10 rounded-[2.5rem] space-y-8 flex flex-col hover:-translate-y-2 transition-transform duration-500">
-                  <div className="w-14 h-14 rounded-2xl bg-neutral-900 flex items-center justify-center text-white shadow-lg">
-                    <box.icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="text-2xl font-serif font-black text-neutral-900">{box.title}</h3>
-                  <ul className="space-y-4 flex-grow">
-                    {box.items.map((item) => (
-                      <li key={item} className="flex items-center gap-4 text-neutral-600 text-sm font-bold">
-                        <div className="w-2 h-2 rounded-full bg-orange-500/20 border border-orange-500/50" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
-
           {/* ── Featured Work: Email Campaign ▼ NEW ──────────────────────── */}
           <section className="space-y-20">
 
@@ -673,6 +599,80 @@ export default function Home() {
               </p>
             </div>
 
+          </section>
+
+          {/* ── Career Impact ────────────────────────────────────────────── */}
+          <section className="animate-reveal [animation-delay:0.5s]">
+            <div className="flex flex-col lg:flex-row gap-24">
+              <div className="lg:w-1/3 space-y-8">
+                <h2 className="font-serif text-5xl md:text-6xl font-black text-neutral-900">Carrier <br />Impact.</h2>
+                <div className="h-1 w-24 bg-orange-500 rounded-full" />
+                <p className="text-lg text-neutral-500 leading-relaxed font-medium">
+                  3+ years navigating fast-paced agency environments, managing multi-client deliverables with zero compromise on quality.
+                </p>
+              </div>
+              <div className="lg:w-2/3">
+                <div className="group relative glass p-8 md:p-16 rounded-[3rem] premium-shadow border border-neutral-200/50 hover:border-orange-200 transition-all duration-500">
+                  <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
+                    <div className="space-y-2">
+                      <span className="text-xs font-black uppercase tracking-[0.3em] text-orange-500">Agency Experience</span>
+                      <h3 className="text-4xl font-serif font-black text-neutral-900">Manyfox Media</h3>
+                      <p className="text-neutral-400 font-bold tracking-widest text-xs">TORONTO, CANADA • 2022 — 2025</p>
+                    </div>
+                    <div className="bg-neutral-900 text-white px-6 py-3 rounded-xl text-xs font-black tracking-widest uppercase shadow-xl">
+                      Creative Copywriter
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-12">
+                    {[
+                      { val: "25+", label: "Client Projects", desc: "End-to-end multi-channel campaign execution." },
+                      { val: "150+", label: "Paid Ad Copies", desc: "Strategic copy for Meta, Google, & LinkedIn Ads." },
+                      { val: "40+", label: "Web Assets", desc: "Landing pages, homepages, & product pages." },
+                      { val: "30+", label: "Email Series", desc: "Conversion sequences and newsletters." },
+                    ].map((stat, i) => (
+                      <div key={i} className="group/item space-y-4">
+                        <div className="flex items-baseline gap-2">
+                          <p className="text-5xl font-serif font-black text-neutral-900 group-hover/item:text-orange-500 transition-colors">{stat.val}</p>
+                          <div className="w-2 h-2 rounded-full bg-orange-500 opacity-0 group-hover/item:opacity-100 transition-opacity" />
+                        </div>
+                        <p className="text-xs font-black uppercase tracking-[0.2em] text-neutral-800">{stat.label}</p>
+                        <p className="text-sm text-neutral-500 leading-relaxed font-medium">{stat.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ── Toolkit ──────────────────────────────────────────────────── */}
+          <section className="space-y-24">
+            <div className="text-center space-y-4">
+              <h2 className="font-serif text-5xl md:text-7xl font-black text-neutral-900">The Toolkit.</h2>
+              <p className="text-neutral-500 font-bold tracking-[0.3em] uppercase text-[10px]">Methodology Meets Technology</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { title: "Core Skills", icon: Sparkles, items: ["Marketing Copywriting", "SEO Copywriting", "Brand Voice", "Content Strategy", "Landing Page Optimization"] },
+                { title: "Platforms", icon: MoveRight, items: ["Meta Ads Manager", "Google Ads", "LinkedIn Ads", "Google Analytics", "Search Console"] },
+                { title: "Internal Tools", icon: Star, items: ["Figma", "Canva", "Notion", "Asana", "Slack", "Google Workspace"] },
+              ].map((box, i) => (
+                <div key={i} className="glass p-10 rounded-[2.5rem] space-y-8 flex flex-col hover:-translate-y-2 transition-transform duration-500">
+                  <div className="w-14 h-14 rounded-2xl bg-neutral-900 flex items-center justify-center text-white shadow-lg">
+                    <box.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-2xl font-serif font-black text-neutral-900">{box.title}</h3>
+                  <ul className="space-y-4 flex-grow">
+                    {box.items.map((item) => (
+                      <li key={item} className="flex items-center gap-4 text-neutral-600 text-sm font-bold">
+                        <div className="w-2 h-2 rounded-full bg-orange-500/20 border border-orange-500/50" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </section>
 
         </main>
