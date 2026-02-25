@@ -1,4 +1,4 @@
-import { Mail, Linkedin, ArrowRight, Sparkles, MoveRight, Star, Zap, TrendingUp, Clock, Tag, ChevronRight } from "lucide-react";
+import { Mail, Linkedin, ArrowRight, Sparkles, MoveRight, Star, Zap, TrendingUp, Clock, Tag, ChevronRight, Target, Users, Layout } from "lucide-react";
 import Link from "next/link";
 
 // ── Email Card Sub-component ─────────────────────────────────────────────────
@@ -327,6 +327,191 @@ export default function Home() {
               </div>
               <p className="text-neutral-600 font-medium leading-relaxed max-w-3xl">
                 The sequence moves from <span className="font-black text-neutral-900">anticipation</span> → <span className="font-black text-neutral-900">value education</span> → <span className="font-black text-neutral-900">urgency</span>. Emotional (ritual, calm) and functional (energy, antioxidants) triggers are layered to increase conversion probability across audience segments.
+              </p>
+            </div>
+          </section>
+
+          {/* ── Featured Work: Website Product Page ▼ NEW ──────────────────────── */}
+          <section className="space-y-20">
+
+            {/* Section header */}
+            <div className="flex flex-col lg:flex-row gap-12 lg:items-end">
+              <div className="lg:w-1/2 space-y-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-[10px] font-black tracking-[0.2em] uppercase">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+                  Featured Work · Client Project
+                </div>
+                <h2 className="font-serif text-5xl md:text-7xl font-black text-neutral-900 leading-none tracking-tight">
+                  Website <br />
+                  <span className="text-orange-500 italic">Copy.</span>
+                </h2>
+                <p className="text-lg text-neutral-500 font-medium leading-relaxed max-w-lg">
+                  A high-converting D2C product page for a premium Japanese matcha brand — blending sensory storytelling with functional benefits.
+                </p>
+              </div>
+
+              {/* Strategy snapshot cards */}
+              <div className="lg:w-1/2 grid grid-cols-2 gap-4">
+                {[
+                  { icon: Target, label: "Industry", value: "D2C / Wellness" },
+                  { icon: Layout, label: "Format", value: "Website Product Page" },
+                  { icon: TrendingUp, label: "Objective", value: "Drive Online Purchases" },
+                  { icon: Users, label: "Audience", value: "Health-Conscious Millennials" },
+                ].map(({ icon: Icon, label, value }) => (
+                  <div key={label} className="glass p-5 rounded-2xl border border-neutral-200/50 space-y-2 hover:border-orange-200 transition-colors">
+                    <div className="flex items-center gap-2 text-orange-500">
+                      <Icon className="w-3.5 h-3.5" />
+                      <span className="text-[9px] font-black uppercase tracking-[0.25em] text-neutral-400">{label}</span>
+                    </div>
+                    <p className="text-sm font-black text-neutral-900 leading-tight">{value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Landing Page Wireframe Wrapper */}
+            <div className="rounded-[2rem] overflow-hidden premium-shadow border border-neutral-200/60 bg-white group">
+              {/* Browser Chrome */}
+              <div className="bg-neutral-100 px-5 py-3 flex items-center gap-3 border-b border-neutral-200">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-red-400" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-400" />
+                  <div className="w-3 h-3 rounded-full bg-green-400" />
+                </div>
+                <div className="flex-1 bg-white rounded-md px-3 py-1 flex items-center justify-center text-[10px] text-neutral-400 font-mono">
+                  matcharitual.com/premium-ceremonial-matcha
+                </div>
+              </div>
+
+              {/* Page Content Wireframe */}
+              <div className="bg-[#FAFAF9]">
+                
+                {/* Hero Section */}
+                <div className="px-8 py-16 md:py-24 text-center border-b border-neutral-200/50 bg-[#F4F1ED]">
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-6">01 · Hero Section Copy</p>
+                  <h3 className="max-w-3xl mx-auto font-serif text-3xl md:text-5xl font-black text-neutral-900 leading-tight mb-6">
+                    Experience the Ritual of Pure Japanese Matcha
+                  </h3>
+                  <p className="max-w-2xl mx-auto text-neutral-600 font-medium md:text-lg mb-10 leading-relaxed">
+                    Stone-ground, ceremonial-grade matcha sourced from Uji, Japan crafted for calm energy and mindful focus.
+                  </p>
+                  <button className="bg-emerald-800 text-white px-8 py-4 rounded-full font-black text-sm tracking-wide shadow-lg hover:shadow-emerald-900/20 transition-all hover:-translate-y-1">
+                    Shop Ceremonial Matcha
+                  </button>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                  {/* Problem/Solution */}
+                  <div className="px-8 py-16 border-b md:border-b-0 md:border-r border-neutral-200/50 bg-white">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-8">02 · Problem → Solution</p>
+                    <h4 className="font-serif text-2xl font-black text-neutral-900 mb-6">Tired of the 3 PM crash?</h4>
+                    <div className="space-y-4 text-sm font-medium text-neutral-600 leading-relaxed italic border-l-2 border-red-200 pl-4 mb-6">
+                      <p>Coffee spikes your energy and then drops it.</p>
+                      <p>Energy drinks overload your system.</p>
+                    </div>
+                    <div className="space-y-4 text-sm font-medium text-neutral-800 leading-relaxed border-l-2 border-emerald-400 pl-4">
+                      <p className="font-bold">Matcha delivers steady, sustained focus without jitters or burnout.</p>
+                      <p>Rich in L-theanine and antioxidants, our ceremonial-grade matcha supports calm alertness, the kind that carries you through your day.</p>
+                    </div>
+                  </div>
+
+                  {/* Product Description */}
+                  <div className="px-8 py-16 border-b border-neutral-200/50 bg-[#F8FAEC]">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-8">03 · Product Description</p>
+                    <p className="text-sm font-bold text-neutral-800 mb-6 leading-relaxed">
+                      Our matcha is sourced from shade-grown tea leaves in Uji, Japan, the birthplace of premium ceremonial tea.
+                    </p>
+                    <p className="text-xs font-black uppercase tracking-[0.1em] text-neutral-500 mb-3">Each batch is:</p>
+                    <ul className="space-y-3 mb-6">
+                      {["Stone-ground in small quantities", "Vibrant emerald green", "Smooth, never bitter", "Free from additives or fillers"].map(item => (
+                        <li key={item} className="flex items-center gap-3 text-sm font-medium text-neutral-700">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-sm font-bold text-emerald-800 italic">
+                      From morning rituals to pre-workout fuel, this is energy elevated.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                  {/* Benefits */}
+                  <div className="px-8 py-16 border-b md:border-b-0 md:border-r border-neutral-200/50 bg-white">
+                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-8">04 · Benefits</p>
+                     <h4 className="font-serif text-xl font-black text-neutral-900 mb-6">Why You&apos;ll Love It</h4>
+                     <ul className="space-y-4">
+                      {["Calm, sustained energy", "Supports focus and clarity", "Rich in antioxidants", "Gentle on the stomach", "Zero sugar, zero crash"].map(benefit => (
+                        <li key={benefit} className="flex items-center gap-3 text-sm font-bold text-neutral-800">
+                          <span className="text-emerald-500">✔</span>
+                          {benefit}
+                        </li>
+                      ))}
+                     </ul>
+                  </div>
+
+                  {/* Ritual Section */}
+                  <div className="px-8 py-16 border-b border-neutral-200/50 bg-[#F4F1ED]">
+                    <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-8">05 · Ritual Section</p>
+                    <h4 className="font-serif text-xl font-black text-neutral-900 mb-6">Your Daily Matcha Ritual</h4>
+                    <ol className="space-y-4 mb-8">
+                      {["Sift 1 tsp into a bowl", "Add warm (not boiling) water", "Whisk until frothy", "Sip slowly. Reset. Refocus."].map((step, idx) => (
+                        <li key={step} className="flex items-start gap-4 text-sm font-medium text-neutral-700">
+                          <span className="w-5 h-5 rounded-full bg-neutral-200 text-neutral-600 flex items-center justify-center text-[10px] font-black flex-shrink-0 mt-0.5">{idx + 1}</span>
+                          {step}
+                        </li>
+                      ))}
+                    </ol>
+                    <p className="text-sm font-bold text-neutral-900 italic border-l-2 border-orange-300 pl-4">
+                      Wellness isn&apos;t rushed. It&apos;s practiced.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Social Proof */}
+                <div className="px-8 py-16 border-b border-neutral-200/50 bg-emerald-900 text-white">
+                  <p className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-400/70 mb-8 text-center">06 · Social Proof</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    {[
+                      { quote: "Switched from coffee and never looked back. Smooth energy all day.", author: "Verified Customer" },
+                      { quote: "The quality is unmatched. You can taste the difference.", author: "Wellness Blogger" }
+                    ].map((testimonial) => (
+                      <div key={testimonial.author} className="bg-emerald-800/50 p-6 rounded-2xl border border-emerald-700/50 text-center space-y-4">
+                        <div className="flex justify-center gap-1">
+                          {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />)}
+                        </div>
+                        <p className="text-sm font-medium italic">&ldquo;{testimonial.quote}&rdquo;</p>
+                        <p className="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-300">— {testimonial.author}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Final CTA */}
+                <div className="px-8 py-20 text-center bg-white">
+                   <p className="text-[10px] font-black uppercase tracking-[0.2em] text-neutral-400 mb-6">07 · Final CTA</p>
+                   <h3 className="font-serif text-3xl font-black text-neutral-900 mb-4">Elevate your everyday energy.</h3>
+                   <p className="text-neutral-600 font-medium mb-10">Experience ceremonial-grade matcha the way it&apos;s meant to be enjoyed.</p>
+                   <button className="bg-emerald-800 text-white px-10 py-4 rounded-full font-black tracking-wide shadow-lg hover:shadow-emerald-900/20 transition-all hover:-scale-105 inline-flex items-center gap-2">
+                     Shop Now <ArrowRight className="w-4 h-4" />
+                   </button>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Strategy note */}
+            <div className="glass rounded-[2rem] border border-neutral-200/50 p-8 md:p-12 space-y-4 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/3 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-xl bg-neutral-900 flex items-center justify-center text-white flex-shrink-0">
+                  <Sparkles className="w-4 h-4" />
+                </div>
+                <p className="text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500">Strategy Note</p>
+              </div>
+              <p className="text-neutral-600 font-medium leading-relaxed max-w-3xl">
+                This page focuses on <span className="font-black text-neutral-900">premium positioning</span>, sensory language, and <span className="font-black text-neutral-900">ritual storytelling</span> rather than aggressive selling. The messaging balances <span className="font-black text-neutral-900">emotional appeal</span> (mindful ritual) with <span className="font-black text-neutral-900">functional benefits</span> (steady energy, antioxidants) to differentiate from mass-market matcha brands.
               </p>
             </div>
           </section>
